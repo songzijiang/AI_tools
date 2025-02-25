@@ -1,5 +1,7 @@
 # AI_tools
-一个AI代理脚本，可以用来转发AI请求，并添加联网功能，让离线AI支持联网搜索。本脚本仅支持searxNG搜索，默认使用谷歌搜索。其他搜索引擎请和设置自行更改searxng_search中的preferences参数
+一个AI代理脚本，用来无感嵌入各类LLM api中，可以用来转发AI请求，并添加联网功能，让离线AI支持联网搜索。
+
+本脚本搜索仅支持searxNG搜索，默认偏好使用谷歌搜索。其他搜索引擎请和设置自行更改preferences参数
 
 searxng_url:为searxng服务器地址，部署参考[这里](https://github.com/searxng/searxng)。setting.xml中记得添加支持json格式
 
