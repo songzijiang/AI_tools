@@ -1,0 +1,27 @@
+url:
+  ait_searxng_url: "http://127.0.0.1:8080"
+  ait_target_server: "http://127.0.0.1"
+
+searxng:
+  max_results: 5 # Maximum number of results to fetch from search engines.
+  preferences: "eJx1WMuu4zgO_ZrJxqhgpmuAQS-yKmDQq-4BpvaGLNE2y7Lo0iOJ79c36UcsxbcWlbohJYqkDg-paBWhI48Qbh048MperHJdUh3cVIp0saSVhdtH_-UP5cKXb39eRKxpnCxEuF1adUdNrvYQyN7B3y448uZ68vScb_9VNsBlhNiTuf3vr_9_vwTVQgDldX_75yX2MMItoBi7sIVkY6jZmINHHVWzbTeEh3lS_PVKvrus2-oQZ7v5qsFF8LWy2LmR_972K3NXToOpt3NX6c8Efq7R1REjG1iF6Fp0GNmq9mTtJl33iWN6TdfMpizoePvuE1x6igPM4WagVRzBJXlbt-RHFSO67jZ5iHG-GAyqsewFuA4d5_v3TnV1HUijstUIBtU_fvvG0TVQBc7wUNdLJkMpre5ogOp6-e9dp5JB1o0poBaVhadyxqOq6-12F-nE51cWXXpWk9KDHMKHRdE5p0Il0eId6rpFu54_DdWI3pPPZZz9ij_lbJ8vdooBYdRm0uGTQvXAAfczwpC7I5pJos-FDVqUf1mcDeeyXBKbpAeIm9lmagp1NNh1h1dLgq9a66uBzKq2lExrlQeF-XY98bW14IGBsx3AiAiBhXxnGkW-yh7mjgzXbO8M09vXar3J7EZFyChnkXyKJUYNQuFC8nL8nMsMwAcj_HXDBkJUEdkMcS15kZiuYiAKipFcyDeLMY53Q3Ou4CjQHDbkSoyKxY0YzrX86-hz6TnETLemO0t7piuykMkfoMSdw6sVcKOaeDl_it8j_dixs6_ikoO5yOO_nplTrfEkoe6w4ESZ2Ks4MhHlyzxwTVEbH4yMyqDnYpeyX5HQenQDKp1vmOcsgR3gR8_UkUmYZFSzI4kMNOC77SvrgKFJ4_6dyDAeTb6dqOPgJ6tmKblwBJBrRmIo5mlmCgIv9CIUnd9Nrxqv5GM7smcaAL9exSqA5wv2bCRchVeW7zia5nAMxy75zDA6lZ2Pjv9ESuFz2Y5ivkPPeJ0zOz8w9HQcw2zglZ8rudWAWfiigOi5NVl2M7925rfuXkDYUhMiXP0eI7clpSfl9q_00RccMD7GxuYCN-1X5GalDifIzAFyVqEJ3ObyEYMI-UigUuRhoiyglZAx7LTGNHQu2JfwXHWHai-6z7YVRTelhknxvh3486FczHd5MAbjqVN57PpYGVXwgacYufESA48gw-967DgHLC-Jm6JOIVynmSeE_SK0MmaWehjThoolEfilJwsn-WpaSqqSj5d05DBQV0HzLuVz0mbK9HGSISXzJNIwUyRG3SCI2K8jSlrZhkrF4ky6JTEWZTGrnqjscs383vUaoiG8C38mKlMkwkDJ67N0Ar3U-y_ER8Qi5uEpLFkrV99pfsvEg2zr1chjQl92ANTxg1yxdpyZOJkYq1cJmoJ6v379z_NIpkkGXA6KD6fGwhz9ABjOkjPMN3mB44X-JrQUjzOcuksPyRCamrmDceeACcDH1OTFuwCctw_S1x_QZKpZle1Yvp9984l5I7doOfmBCzuXPeiJAzkuvCrMjtws_efIDAy-DG4Vnc5axaf-Gvg-dFHF4d4J02Rb79wIlyFwS4WgYeS5oQgwjaPNOIwp7f7Gss1BqCtM-xSPRlbQz9BdO9qp5gKunIcXYlqn0nxa9FzF-Sjsn3jPsd3whKvVOB3tRCbFc6YWaZHSRXJKnXCy1Eo-Duge2oGEg19jFtyRCYa9yyceki5a9Wlv9BDnkbgTuOxuW4t6yFsmJwjzbtgJge7dlmeDw9za6_OUbt3_FOwmL8LdZKeAN_knRNlv5y2HD-y2CnnrhXGcq52OV8YpW8S6IgXwv9Jx64u_0ollTsVZ_fHl1VvzMUDmA2p5m2Okh4IsFD9RDLlfuPJS9yr0TO2frDCvIQGfy5PhuC7uMwPCPkgJehSPizI-B4gFC-867reMAbXN56WeCxcg8ni7z7iTEXI6Fk382pROuWlRXrwQchROMhJn97t8vy7uHl5PKGNdo7IcTsR1FHh-NjL77XBdna0Mt3R0K9CO9-FxZmpGOTTzc54wnyhKLK6iE2xX8QmhXvHAWDX8Sgn54ycw2at9ODqojxITQnlH3PH1QFzVraXH8QxNTXIx7eSVeApN4XWTgSwaHvr9isE9S8kFnrVDn7_lpNmX8c2U3rrKS_J6uim0zA6CgmzZHcfidS9MWFhmgWwpJktZJNXCeLqecporT5nNlW8_HuSqJfgjBw_yxuGQPbqIorykJHlvpfNQ1vbcNFzuUoz-iu6trZxdX8Unp1dxSeXx3_tb__ihZbKJO0u4karXn5AensfPhddC5MljHfDI10zvenj1o32bsFrNbMKwiVtXtm2NriXZ5pcXUy2_9Xgege7LCiGQbb90DWV14pmI_IWnS67t29-f3VQ4&q=%s"
+  # q: # The search query. This string is passed to external search services.
+  categories: "general" # Comma separated list, specifies the active search categories
+  # engines: # Comma separated list, specifies the active search engines
+  language: "all" # Code of the language.
+  # pageno: # Search page number..
+  # time_range: # [ day, month, year ] Time range of search for engines which support it. See if an engine supports time range search in the preferences page of an instance.
+  format: "json" # [ json, csv, rss ] Output format of results.
+  results_on_new_tab: 0 # [ 0, 1 ] Open search results on new tab.
+  # image_proxy: # [ True, False ] Proxy image results through SearXNG.
+  # autocomplete: #[ google, dbpedia, duckduckgo, mwmbl, startpage, wikipedia, stract, swisscows, qwant ] Service which completes words as you type.
+  safesearch: 0 # [ 0, 1, 2 ] Filter search results of engines which support safe search. See if an engine supports safe search in the preferences page of an instance.
+  theme: "simple" # [ simple ] Theme of instance.
+
+rag:
+  turn_on: 0 # [ 0, 1 ] 1 means turn on the rerank model.
+  rerank_model_url: "https://api.siliconflow.cn/v1/rerank" # URL of the rerank model.
+  rerank_model: "BAAI/bge-reranker-v2-m3" # Name of the rerank model.
+  top_n: 5 # Number of results to keep in the rerank model.
+  max_chunks_per_doc: -1 # Maximum number of chunks to keep in the rerank model.
+  tokens: xxxxxxxxxxx # API token for the rerank model. IMPORTANT: Do not share this token with anyone.
