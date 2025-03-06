@@ -28,7 +28,7 @@ def proxy(dummy):
     if 'chat/completions' in url:
         print(f"参数内容:{request.json}")
         json = request.json
-        if json['messages'][-1]['role'] == 'user':
+        if json['messages'][-1]['role'] == 'user' and '查询' in json['messages'][-1]['content']:
             search_result = web_search.search(json['messages'][-1]['content'])
             json['messages'][-1]['content'] = get_web_search_prompt(search_result, json['messages'][-1]['content'])
         response = requests.request(
