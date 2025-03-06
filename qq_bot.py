@@ -58,7 +58,7 @@ class MyClient(botpy.Client):
 
     async def on_c2c_message_create(self, message: C2CMessage):
         sd = self.send_message(message)
-        await sd.send_c2c('AI思考中...')
+        # await sd.send_c2c('AI思考中...')
         try:
             await sd.send_c2c(self.ai_chat(message.content))
         except Exception as e:
