@@ -29,8 +29,10 @@ def proxy(dummy):
         print(f"参数内容:{request.json}")
         json = request.json
         if json['messages'][-1]['role'] == 'user' and '查询' in json['messages'][-1]['content']:
-            search_result = web_search.search(json['messages'][-1]['content'])
-            json['messages'][-1]['content'] = get_web_search_prompt(search_result, json['messages'][-1]['content'])
+            message = json['messages'][-1]['content']
+            message.replace('查询', '')
+            search_result = web_search.search(message)
+            json['messages'][-1]['content'] = get_web_search_prompt(search_result, message)
         response = requests.request(
             headers=request.headers,
             method=request.method,
