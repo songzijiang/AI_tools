@@ -31,3 +31,4 @@ completed.log
 config.yaml
 *.nc
 *.HDF
+botpy.log*
