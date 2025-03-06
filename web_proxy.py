@@ -32,7 +32,7 @@ def proxy(dummy):
             message = json['messages'][-1]['content']
             message.replace('查询', '')
             search_result = web_search.search(message)
-            json['messages'][-1]['content'] = get_web_search_prompt(search_result, message)
+            json['messages'][-1]['content'] = get_web_search_prompt(config['prompt'], search_result, message)
         response = requests.request(
             headers=request.headers,
             method=request.method,
