@@ -24,7 +24,21 @@ rag:
   model: "BAAI/bge-reranker-v2-m3" # Name of the rerank model.
   top_n: 5 # Number of results to keep in the rerank model.
   max_chunks_per_doc: -1 # Maximum number of chunks to keep in the rerank model.
-  token: xxxxxxxxxxx # API token for the rerank model. IMPORTANT: Do not share this token with anyone.
+  token: "xxxxxxxxxxx" # API token for the rerank model. IMPORTANT: Do not share this token with anyone.
+
+tools:
+  server: "http://127.0.0.1/v1"
+  model: "deepseek-r1:70b"
+  token: "xxxxxxxxxxx"
+
+
+mail:
+  host: "smtp.qq.com"
+  port: 587
+  user: "xxxxxxxxx@qq.com"
+  password: "mail token"
+
+
 
 prompt: "# 以下内容是基于用户发送的消息的搜索结果:
         {search_results}
