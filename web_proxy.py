@@ -1,10 +1,11 @@
 from flask import Flask, request, Response, stream_with_context
 import requests
 import os
-
-from web import searxng
-from prompt import get_web_search_prompt
-from general import get_config, load_config
+import json
+from tools.web_search import Searxng
+from tools.mail import Mail
+from datetime import datetime
+from tools.general import get_config, load_config, Tools
 
 config = load_config(file_path='config.yaml')
 default_config = load_config(file_path='default_config.yaml')
@@ -15,7 +16,14 @@ target_server = os.getenv('ait_target_server', ait_target_server)
 
 app = Flask(__name__)
 
-web_search = searxng(config, default_config)
+# 注入工具类和说明
+web_search = Searxng(config, default_config)
+mail = Mail(config, default_config)
+
+tools = {'websearch': web_search.description(), 'mail': mail.description()}
+instance = {'websearch': web_search.search, 'mail': mail.send_mail}
+
+tool_client = Tools(config, default_config, tools)
 
 
 @app.route('/<path:dummy>', methods=['GET', 'POST'])
@@ -27,12 +35,18 @@ def proxy(dummy):
     print(f"真实请求的url:{url}")
     if 'chat/completions' in url:
         print(f"参数内容:{request.json}")
-        json = request.json
-        if json['messages'][-1]['role'] == 'user' and '查询' in json['messages'][-1]['content']:
-            message = json['messages'][-1]['content']
-            message.replace('查询', '')
-            search_result = web_search.search(message)
-            json['messages'][-1]['content'] = get_web_search_prompt(config['prompt'], search_result, message)
+        request_json = request.json
+        if request_json['messages'][-1]['role'] == 'user':
+            message = request_json['messages'][-1]['content']
+            # 选择需要使用的工具
+            reason, need_tools = tool_client.select_tools(message)
+            print(f"选择的工具:{need_tools}")
+            results = {}
+            for tool in need_tools:
+                toole_name = tool['tool']
+                params = tool['params']
+                results[toole_name] = {'params': str(params), 'result': instance[toole_name](*params)}
+            request_json['messages'][-1]['content'] = tool_client.make_prompt(results, message)
         response = requests.request(
             headers=request.headers,
             method=request.method,
